@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/roi_calculator/static/css/main.140276bc.css",
-    "main.js": "/roi_calculator/static/js/main.7b7da17f.js",
+    "main.js": "/roi_calculator/static/js/main.df26bacd.js",
     "static/js/787.9c877501.chunk.js": "/roi_calculator/static/js/787.9c877501.chunk.js",
     "index.html": "/roi_calculator/index.html",
     "main.140276bc.css.map": "/roi_calculator/static/css/main.140276bc.css.map",
-    "main.7b7da17f.js.map": "/roi_calculator/static/js/main.7b7da17f.js.map",
+    "main.df26bacd.js.map": "/roi_calculator/static/js/main.df26bacd.js.map",
     "787.9c877501.chunk.js.map": "/roi_calculator/static/js/787.9c877501.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.140276bc.css",
-    "static/js/main.7b7da17f.js"
+    "static/js/main.df26bacd.js"
   ]
 }
