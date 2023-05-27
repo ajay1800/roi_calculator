@@ -1,0 +1,365 @@
+.container {
+    width:100%;
+    background-color: darkgray;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator_title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.input_lable {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    color: gray;
+    font-weight: 700;
+}
+
+.input_lable span {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: end;
+}
+
+.input_lable div{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.input_lable div:nth-child(1){
+    width: 25%;
+    margin-right: 10px;
+}
+.input_lable div:nth-child(2){
+    width: 40%;
+}
+
+.usd_input input {
+    position: absolute;
+    width: 45px;
+    height: 20px;
+    opacity: 0;
+    z-index: 9;
+}
+
+.slider {
+    width: 60px;
+    height: 25px;
+    background-color: #F8C400;
+    border-radius: 20px;
+}
+
+.slider::before{
+    position: relative;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+    top: 3px;
+    right:22px;
+}
+
+.input_lable input:checked + .slider::before {
+    transform: translateX(20px);
+    transition: all;
+}
+
+.input {
+    width: 100%;
+}
+
+.input input{
+    width: 98%;
+    padding: 12px 2px;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 10px;
+    text-align: end;
+    padding-right: 2%;
+    border: 1px solid #ECECEC;
+    background-color: #F9FAFB;
+}
+
+.balance {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.select_balance{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+}
+.current_balance{
+    width: 40%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+    background-color: #FFF9AA;
+    border: 1px solid #FED700;
+}
+.use_balance {
+    width: 25%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+    background: #e3e3e3a1;
+}
+
+.fixed_balance {
+    font-weight: 500;
+    color: gray;
+}
+
+.timeframe{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.timeframe_title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.timeframe_title p {
+    margin: 5px 0px;
+}
+
+.timeframe_detail{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 700;
+    align-items: center;
+    height: 60px;
+ 
+}
+.timeframe_detail p{
+    border-radius: 20px;
+    width: 18%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3e3e3a1;
+    color: gray;
+}
+
+.timeframe_detail p:nth-child(1){
+    border: 1px solid #FED700;
+    background-color: #FCEB74;
+    color: black;
+}
+
+.apy_header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.apy_header p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.apy_header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.apy_slider {
+    width: 60px;
+    height: 30px;
+    background-color: #EAEAEA;
+    border-radius: 20px;
+}
+.apy_slider::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    top: 21.7rem;
+    left: 58.1rem;
+}
+
+.apy_header input:checked + .apy_slider::before {
+    transform: translateX(28px);
+    transition: all;
+}
+
+.apy_header input{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+}
+
+.tier{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: gray;
+}
+.tier h3{
+    margin: 0;
+}
+
+.tier_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 700;
+    width: 100%;
+    height: 60px;
+}
+
+.tier_details p{
+    border-radius: 20px;
+    width: 18%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3e3e3a1;
+    color: gray;
+}
+
+.tier_details p:nth-child(4){
+    border: 1px solid #FED700;
+    background-color: #FCEB74;
+    color: black;
+}
+
+.roi_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.roi_box p{
+    color: gray;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.action{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action button {
+    width: 48%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.btn_one {
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+
+.btn_two {
+    background-color: white;
+    color: #666666;
+    border: 1px solid #b1a8a8 ;
+}
+
+.details{
+    margin-top: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 22%;
+}
+
+.details_data{
+    width: 100%;
+}
+
+.details_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    align-items: center;
+    height: 45px;
+}
+
+.details_body{
+    color: gray;
+    font-weight: 500;
+    padding: 0;
+    width: 100%;
+}
+.details_body ul{
+    padding-left: 20px;
+    margin: 0px;
+}
